@@ -1,10 +1,10 @@
-FROM mcr.microsoft.com/azure-sql-edge:latest
+FROM mcr.microsoft.com/azure-sql-edge:1.0.7
 
 ENV ACCEPT_EULA=Y
 
 USER root
 
-RUN mkdir /var/opt/sqlserver
+RUN mkdir /var/opt/sqlserver    
 
 RUN chown mssql /var/opt/sqlserver
 
